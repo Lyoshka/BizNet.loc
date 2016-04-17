@@ -5,4 +5,10 @@
  * Date: 25.01.16
  * Time: 4:46
  */?>
-{!! Form::submit($title, array('class' => 'btn btn-primary')) !!}
+<div class="form-group">
+
+    <div class="col-sm-6 col-sm-offset-2">
+
+        {!! Form::submit($title, array('class' => 'btn btn-primary')) !!}
+    </div>
+</div>

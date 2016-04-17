@@ -14,5 +14,5 @@
         @include('widgets.form._formitem_checkbox', ['name' => 'remember', 'title' => 'Запомнить меня'] )
         @include('widgets.form._formitem_btn_submit', ['title' => 'Вход'])
     {!! Form::close() !!}
-<p><a href="{{URL::to('/reset')}}">Забыли пароль?</a></p>
+<p class="col-sm-6 col-sm-offset-2"><a href="{{URL::to('/reset')}}">Забыли пароль?</a></p>
 @stop
