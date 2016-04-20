@@ -26,12 +26,11 @@
 
     <div class="collapse navbar-collapse" id="navbar-main">
       <ul class="nav navbar-nav">
-        <li>
-          <a href="/public">Домой</a>
-        </li>
+        <li><a href="/public">Домой</a></li>
+		<li><a href="/public/admin">Админка</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/public/login">Регистрация</a></li>
+        <li><a href="/public/register">Регистрация</a></li>
         <li class="active"><a href="/public/login">Вход</a></li>
       </ul>
     </div>
@@ -41,8 +40,8 @@
 <div class="splash" style="background-position: 0px 0px;">
       <div class="container">
 
-            <h1>Lorem ipsum dolor sit amet.</h1>
-			<p>Totam rem aperiam eaque ipsa, quae ab illo inventore. Dolorum fuga deleniti atque corrupti, quos dolores et accusamus.</p>
+            <h1>BizNet</h1>
+			
 
       </div>
 </div>

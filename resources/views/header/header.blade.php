@@ -17,7 +17,7 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/public/login">Регистрация</a></li>
+        <li><a href="/public/register">Регистрация</a></li>
         <li class="active"><a href="/public/login">Вход</a></li>
       </ul>
     </div>
