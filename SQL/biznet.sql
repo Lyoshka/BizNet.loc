@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS `permit_role` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Дамп данных таблицы biznet.permit_role: ~0 rows (приблизительно)
+-- Дамп данных таблицы biznet.permit_role: ~5 rows (приблизительно)
 /*!40000 ALTER TABLE `permit_role` DISABLE KEYS */;
 INSERT INTO `permit_role` (`id`, `permit_id`, `role_id`, `created_at`, `updated_at`) VALUES
 	(1, 2, 2, NULL, NULL),
@@ -118,15 +118,16 @@ CREATE TABLE IF NOT EXISTS `persistences` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `persistences_code_unique` (`code`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Дамп данных таблицы biznet.persistences: ~2 rows (приблизительно)
+-- Дамп данных таблицы biznet.persistences: ~5 rows (приблизительно)
 /*!40000 ALTER TABLE `persistences` DISABLE KEYS */;
 INSERT INTO `persistences` (`id`, `user_id`, `code`, `created_at`, `updated_at`) VALUES
 	(1, 2, 'MEIrJtLsgemMkOdh8FoBfKspDlvAEVYM', '2016-04-18 20:10:54', '2016-04-18 20:10:54'),
 	(2, 1, '2Em3ozQh9wiP33OzC5FSgZpDlWi45Xtn', '2016-04-18 20:38:06', '2016-04-18 20:38:06'),
 	(5, 1, 'By422KGptZPdqJel1jm219JyOi1H6DEj', '2016-04-18 22:41:46', '2016-04-18 22:41:46'),
-	(6, 1, 'gNyMZBdPSY2ZzU7wD5Vp1MineIH3khAV', '2016-04-19 20:14:05', '2016-04-19 20:14:05');
+	(6, 1, 'gNyMZBdPSY2ZzU7wD5Vp1MineIH3khAV', '2016-04-19 20:14:05', '2016-04-19 20:14:05'),
+	(7, 1, 'tMzgoKRqii94r7N0lsNNjo1zGLVBx1wI', '2016-04-20 22:02:13', '2016-04-20 22:02:13');
 /*!40000 ALTER TABLE `persistences` ENABLE KEYS */;
 
 -- Дамп структуры для таблица biznet.reminders
@@ -157,7 +158,7 @@ CREATE TABLE IF NOT EXISTS `roles` (
   UNIQUE KEY `roles_slug_unique` (`slug`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Дамп данных таблицы biznet.roles: ~3 rows (приблизительно)
+-- Дамп данных таблицы biznet.roles: ~4 rows (приблизительно)
 /*!40000 ALTER TABLE `roles` DISABLE KEYS */;
 INSERT INTO `roles` (`id`, `slug`, `name`, `permissions`, `created_at`, `updated_at`) VALUES
 	(1, 'admin', 'Администратор', '{"admin":true}', '2016-04-17 21:26:28', '2016-04-17 21:26:28'),
@@ -195,7 +196,7 @@ CREATE TABLE IF NOT EXISTS `throttle` (
   KEY `throttle_user_id_index` (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Дамп данных таблицы biznet.throttle: ~0 rows (приблизительно)
+-- Дамп данных таблицы biznet.throttle: ~21 rows (приблизительно)
 /*!40000 ALTER TABLE `throttle` DISABLE KEYS */;
 INSERT INTO `throttle` (`id`, `user_id`, `type`, `ip`, `created_at`, `updated_at`) VALUES
 	(1, NULL, 'global', NULL, '2016-04-18 21:52:08', '2016-04-18 21:52:08'),
@@ -239,7 +240,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Дамп данных таблицы biznet.users: ~2 rows (приблизительно)
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` (`id`, `email`, `password`, `permissions`, `last_login`, `first_name`, `last_name`, `created_at`, `updated_at`) VALUES
-	(1, 'admin@admin.com', '$2y$10$NLiGyCvHfQj7039yvLVQMOyZF9jXVrMizaTwyb3WqrPYQecbjR4kS', NULL, '2016-04-19 20:14:05', 'Администратор', '', '2016-04-17 21:26:27', '2016-04-19 20:14:05'),
+	(1, 'admin@admin.com', '$2y$10$NLiGyCvHfQj7039yvLVQMOyZF9jXVrMizaTwyb3WqrPYQecbjR4kS', NULL, '2016-04-20 22:02:13', 'Администратор', '', '2016-04-17 21:26:27', '2016-04-20 22:02:13'),
 	(2, 'alex@mail.ru', '$2y$10$InFjda/KyjPnKL9agtxwW.QRqYrZNcfsNAc6BCwq/HX3rH/gbl2cm', NULL, '2016-04-18 20:24:35', 'Алексей', '', '2016-04-18 20:10:05', '2016-04-19 20:24:35');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
