@@ -42,4 +42,8 @@ class User extends EloquentUser
         return array_pluck($this->theroles()->get(['id'])->toArray(), 'id');
     }
 
+    public function setPasswordAttribute($value) {
+        $this->attributes['password'] = \Hash::make($value);
+    }
+
 }

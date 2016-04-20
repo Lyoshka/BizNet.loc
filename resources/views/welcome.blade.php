@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>BizNet</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
         <style>
             html, body {
@@ -18,6 +19,13 @@
                 font-weight: 100;
                 font-family: 'Lato';
             }
+	    .nav {
+		height: 80px;
+		background-color: #0899D9;
+		width: 100%;
+                text-align: center;
+                display: inline-block;
+	    }
 
             .container {
                 text-align: center;
@@ -36,10 +44,20 @@
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
+	<div class="container-fluid">
+        <div class="row">
+            <div class="nav">
+	            <p>NavBar</p>
             </div>
         </div>
+	</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <div class="title">BizNet</div>
+            </div>
+        </div>
+    </div>
     </body>
 </html>
