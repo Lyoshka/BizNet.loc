@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('start');
 });
 
 Route::group(['middleware' => ['web']], function () {
@@ -40,5 +40,6 @@ Route::get('reset/{id}/{code}', 'AuthController@resetComplete');
 Route::post('reset/{id}/{code}', 'AuthController@resetCompleteProcess');
 // Сервисная страничка, показываем после заполнения рег формы, формы сброса и т.
 // о том, что письмо отправлено и надо заглянуть в почтовый ящик.
-Route::get('wait', 'AuthController@wait'); 
+Route::get('wait', 'AuthController@wait');
+
 });

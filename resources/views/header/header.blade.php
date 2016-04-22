@@ -15,10 +15,25 @@
         <li>
           <a href="/public">Домой</a>
         </li>
+        	
+	    @if( !Sentinel::guest() )
+        	@if( Sentinel::inRole('admin') )
+			<li><a href="/public/admin">Админка</a></li>
+		@endif
+            @endif
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/public/register">Регистрация</a></li>
-        <li class="active"><a href="/public/login">Вход</a></li>
+        <li class="active"><a href="/public/login">
+
+
+                    @if(Sentinel::check())
+                        {{ Sentinel::check()->first_name  }}
+                    @else
+                        Вход
+                    @endif
+
+		</a></li>
       </ul>
     </div>
   </div>

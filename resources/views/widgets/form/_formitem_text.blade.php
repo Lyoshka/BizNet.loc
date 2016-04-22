@@ -1,10 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Dmitriy Pivovarov aka AngryDeer http://studioweb.pro
- * Date: 25.01.16
- * Time: 4:41
- */?>
+
 <?php if(! isset($value)) $value = null ?>
 <div class="form-group">
     <div class="{!! $errors->has($name) ? 'has-error' : null !!}">

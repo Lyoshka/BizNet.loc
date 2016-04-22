@@ -1,10 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Dmitriy Pivovarov aka AngryDeer http://studioweb.pro
- * Date: 25.01.16
- * Time: 3:56
- */?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -20,7 +13,8 @@
 <header id="header" class="">
     @include('header.header')
 </header>
-<section>
+<section class = "container">
+
     @include('errors.errmsg')
     @yield('body')
 </section>

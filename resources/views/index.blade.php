@@ -40,8 +40,6 @@
 <div class="splash" style="background-position: 0px 0px;">
       <div class="container">
 
-            <h1>BizNet</h1>
-			
 
       </div>
 </div>
