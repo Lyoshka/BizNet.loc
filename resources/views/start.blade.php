@@ -1,9 +1,7 @@
 @extends('layouts.master')
-
-@section('title')
-Home page
-@stop
  
-@section('content')
-Содержимое главной страницы!
+@section('body')
+	<div class="text-center">
+		<h2>Добро пожаловать в BizNet</h2>
+	</div>
 @stop
