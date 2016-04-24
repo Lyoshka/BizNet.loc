@@ -12,20 +12,18 @@
 
     <div class="collapse navbar-collapse" id="navbar-main">
       <ul class="nav navbar-nav">
-        <li>
-          <a href="/public">Домой</a>
-        </li>
         	
 	    @if( !Sentinel::guest() )
         	@if( Sentinel::inRole('admin') )
 			<li><a href="/public/admin">Админка</a></li>
 		@endif
             @endif
+
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/public/register">Регистрация</a></li>
-        <li class="active"><a href="/public/login">
 
+
+        <li class="active"><a href="/public/login">
 
                     @if(Sentinel::check())
                         {{ Sentinel::check()->first_name  }}
@@ -34,6 +32,13 @@
                     @endif
 
 		</a></li>
+
+	    @if( Sentinel::guest() )
+	        <li><a href="/public/register">Регистрация</a></li>
+            @else
+	        <li><a href="/public/logout">Выход</a></li>
+	    @endif
+
       </ul>
     </div>
   </div>

@@ -14,7 +14,6 @@
     @include('header.header')
 </header>
 <section class = "container">
-
     @include('errors.errmsg')
     @yield('body')
 </section>

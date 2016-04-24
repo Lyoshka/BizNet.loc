@@ -42,4 +42,9 @@ Route::post('reset/{id}/{code}', 'AuthController@resetCompleteProcess');
 // о том, что письмо отправлено и надо заглянуть в почтовый ящик.
 Route::get('wait', 'AuthController@wait');
 
+Route::get('/home', function () {
+    return view('layouts.home');
+});
+
+
 });
