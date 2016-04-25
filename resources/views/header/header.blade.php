@@ -15,7 +15,7 @@
         	
 	    @if( !Sentinel::guest() )
         	@if( Sentinel::inRole('admin') )
-			<li><a href="/public/admin">Админка</a></li>
+			<li><a href="/public/admin" class="btn btn-default navbar-btn btn_reg">Админка</a></li>
 		@endif
             @endif
 
@@ -23,7 +23,7 @@
       <ul class="nav navbar-nav navbar-right">
 
 
-        <li class="active"><a href="/public/login">
+        <li class="active"><a href="/public/login" class="btn_login btn btn-default navbar-btn">
 
                     @if(Sentinel::check())
                         {{ Sentinel::check()->first_name  }}
@@ -34,9 +34,9 @@
 		</a></li>
 
 	    @if( Sentinel::guest() )
-	        <li><a href="/public/register">Регистрация</a></li>
+	        <li><a href="/public/register" class="btn btn-default navbar-btn btn_reg">Регистрация</a></li>
             @else
-	        <li><a href="/public/logout">Выход</a></li>
+	        <li><a href="/public/logout" class="btn btn-default navbar-btn btn_reg">Выход</a></li>
 	    @endif
 
       </ul>
