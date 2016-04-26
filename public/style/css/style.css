@@ -80,10 +80,12 @@
     }
 }
 /* Отступ для меню */
+/*
 body
 {
 padding-top: 80px;
 }
+*/
 .splash { 
 /* Отступ до содержимого splash */
 padding:9em 0 2em;
@@ -130,3 +132,10 @@ background-color: #e5f9eb;
 	margin-top: 5px;
 	font-size: 26px;
 }	
+
+.auth_page {
+	
+	padding-top: 80px;
+	
+	
+}
