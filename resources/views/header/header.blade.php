@@ -14,19 +14,32 @@
       <ul class="nav navbar-nav">
         	
 	    @if( !Sentinel::guest() )
-        	@if( Sentinel::inRole('admin') )
+        	@if( Sentinel::inRole('admin') )			
 			<li><a href="/public/admin" class="btn btn-default navbar-btn btn_reg">Админка</a></li>
 		@endif
             @endif
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
+	  
+		<li class="dropdown">
+			
+			    
+					  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						<i class="fa fa-user fa-fw"></i>Action
+						<span class="caret"></span>
+					  </a>
+					  <ul class="dropdown-menu dropdown-user">
+						 <li><a href="/public/login">1</a></li>
+					  </ul>
+				
+		</li>
 
 
         <li class="active"><a href="/public/login" class="btn_login btn btn-default navbar-btn">
 
                     @if(Sentinel::check())
-                        {{ Sentinel::check()->first_name  }}
+                        <i class="fa fa-user fa-fw"></i> {{ Sentinel::check()->first_name  }} <span class="caret"></span>
                     @else
                         Вход
                     @endif
