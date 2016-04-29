@@ -142,3 +142,22 @@ background-color: #e5f9eb;
     width: 100%;
     padding-right: 70px;
 }
+
+.prof1 {
+     padding-right: 150px; 
+     margin-top: 20px; 
+}
+
+.prof2 {
+     padding-right: 100px; 
+     margin-top: 20px; 
+}
+
+.prof {
+    padding-top: 30px;
+}
+
+input[type='text'] {
+    margin-bottom: 16px;
+
+}
