@@ -20,6 +20,8 @@
               <div class="row profile">
                 <button type="button" class="btn btn-primary btn-group-justified" data-dismiss="modal">Изменить аватар</button>
               </div>
+  
+
               <div class="row profile">
                 <button type="button" class="btn btn-primary btn-group-justified" data-dismiss="modal">Изменить пароль</button>
               </div>
