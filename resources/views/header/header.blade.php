@@ -29,7 +29,7 @@
                         <i class="fa fa-user fa-fw"></i> {{ Sentinel::check()->first_name  }} <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a href="/public/logout"><i class="fa fa-user fa-lg"> </i> Мой профиль</a></li>
+						<li><a href="/public/profile"><i class="fa fa-user fa-lg"> </i> Мой профиль</a></li>
 						<li><a href="/public/logout"><i class="fa fa-envelope-o fa-lg"> </i> Сообщения</a></li>
 						<li class="divider"></li>
 						<li><a href="/public/logout"><i class="fa fa-sign-out fa-lg"> </i> Выход</a></li>

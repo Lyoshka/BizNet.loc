@@ -46,5 +46,9 @@ Route::get('/home', function () {
     return view('layouts.home');
 });
 
+Route::get('/profile', function () {
+    return view('layouts.profile');
+});
+
 
 });
