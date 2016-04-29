@@ -18,9 +18,11 @@
                 <img src="img/no_user.jpg" width="250" height="250" alt="">
               </div>
               <div class="row profile">
-                <button type="button" class="btn btn-primary btn-group-justified" data-dismiss="modal">Изменить аватар</button>
-              </div>
-  
+                <span class="btn btn-primary btn-group-justified btn-file">
+                  <i class="icon-plus"> </i><span>Изменить аватар</span>
+                  <input type="file" name="image" id="image" />
+                </span>
+               </div>
 
               <div class="row profile">
                 <button type="button" class="btn btn-primary btn-group-justified" data-dismiss="modal">Изменить пароль</button>
