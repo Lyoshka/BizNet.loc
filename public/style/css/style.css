@@ -133,9 +133,12 @@ background-color: #e5f9eb;
 	font-size: 26px;
 }	
 
-.auth_page {
-	
+.auth_page {	
 	padding-top: 80px;
-	
-	
+}
+
+.profile {
+    margin-top: 30px;
+    width: 100%;
+    padding-right: 70px;
 }
